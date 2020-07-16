@@ -74,7 +74,7 @@ if [ ! -z "${SWIFT_DEFAULT_CONTAINER}" ]; then
 	echo "Creating default container..."
 	for container in ${SWIFT_DEFAULT_CONTAINER} ; do
 	    echo "Creating container...${container}"
-	    swift -A http://localhost:8080/auth/v1.0 -U admin:admin -K admin post ${container}
+	    swift -A http://localhost:8080/auth/v1.0 -U chris:chris1234 -K testing post ${container}
 	done
 fi
 
